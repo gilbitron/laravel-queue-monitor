@@ -1,0 +1,21 @@
+{
+	"name": "gilbitron/laravel-queue-monitor",
+	"description": "A Laravel package to monitor queue jobs.",
+	"keywords": [
+		"laravel",
+		"queue",
+		"monitor"
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Gilbert Pellegrom",
+			"email": "gilbert@pellegrom.me"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Gilbitron\\LaravelQueueMonitor\\": "/src"
+		}
+	}
+}
