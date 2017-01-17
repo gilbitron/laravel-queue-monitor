@@ -15,13 +15,13 @@ A Laravel package to monitor queue jobs. Logs certain information about [queue j
 
 Install the composer package:
 
-```
+```php
 composer require gilbitron/laravel-queue-monitor
 ```
 
 Add the service provider in `config/app.php`:
 
-```
+```php
 /*
  * Package Service Providers...
  */
@@ -30,7 +30,7 @@ Gilbitron\LaravelQueueMonitor\LaravelQueueMonitorProvider::class,
 
 Run a migration to setup the `queue_monitor` database table:
 
-```
+```php
 php artisan migrate
 ```
 
@@ -42,7 +42,7 @@ All queue jobs will now be monitored and results stored to the `queue_monitor` d
 
 To save custom data with the queue monitor results you need to include the `QueueMonitorData` trait in your Job and use the `saveQueueMonitorData()` method. For example:
 
-```
+```php
 <?php
 
 namespace App\Jobs;
